@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background:gray;
+    color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+}
+header h1{
+    margin-bottom: 20px;
+}
+li{
+    list-style: none;
+}
+.main{
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.form input{
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 70%;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.form button{
+    padding: 15px;
+    font-weight: 800;
+    border: none;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+.form button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    transition: 0.5s ease;
+}
+.todo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo-list{
+    min-width: 30%;
+}
+.todo{
+    height: 30px;
+    border-radius: 10px;
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li{
+    flex: 1;
+}
