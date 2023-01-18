@@ -2,9 +2,17 @@
     margin: 0;
     padding: 0;
 }
+.container{
+    max-width: 1600px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 body{
-    height: 100vh;
-    background:gray;
+    overflow-y: visible;
+    min-height: 100vh;
+    background:black;
     color: wheat;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -15,20 +23,26 @@ li{
     list-style: none;
 }
 .main{
-    text-align: center;
-    width: 50%;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+   width: 60%;
+   padding: 100px;
 }
 .form input{
+    font-family: 'Courier New', Courier, monospace;
     border: none;
     border-radius: 10px;
     padding: 1rem;
-    width: 70%;
+    width: 100%;
     font-weight: 700;
     font-size: 1rem;
+}
+select{
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 10px;
+}
+.form{
+    gap: 10px;
+    display: flex;
 }
 .form button{
     padding: 15px;
@@ -37,6 +51,7 @@ li{
     border-radius: 10px;
     background-color: gray;
 }
+
 
 .form button:hover{
     cursor: pointer;
@@ -49,17 +64,19 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* position: sticky; */
 }
 .todo-list{
-    min-width: 30%;
+    min-width: 50%;
 }
 .todo{
-    height: 30px;
+    height: 50px;
     border-radius: 10px;
     margin: 0.5rem;
     background: white;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: 900;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,4 +84,27 @@ li{
 
 .todo li{
     flex: 1;
+}
+.complete-btn{
+    border: 1px solid black;
+    background-color: gray;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+
+}.delete-btn{
+    border: 1px solid black;
+    background-color: gray;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
 }
